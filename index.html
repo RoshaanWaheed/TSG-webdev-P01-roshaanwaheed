@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roshaan Waheed | Full-Stack MERN Developer</title>
+  <meta name="description" content="Portfolio of Roshaan Waheed, a full-stack MERN developer building e-commerce, real-time, and productivity applications.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="logo">RW<span class="logo-dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Roshaan Waheed</h1>
+        <p class="hero-tagline">Full-Stack MERN Developer</p>
+        <p class="hero-sub">I design and ship full-stack web applications — from e-commerce platforms to real-time chat systems — using React, Node.js, and MongoDB.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img src="assets/imageRoshaan.png" alt="Roshaan Waheed" class="hero-photo">
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="about" class="about">
+      <div class="section-head">
+        <span class="section-tag">01 — About</span>
+        <h2>A bit about me</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-bio">
+          I'm a Software Engineering graduate from Capital University of Science and Technology (CUST), Rawalpindi, specializing in the MERN stack. Over the past year I've designed and shipped five full-stack applications end-to-end — handling everything from database schema design and REST APIs to responsive UI and deployment. I care about clean, maintainable code as much as I care about how an interface feels to use. I'm currently based in the Rawalpindi/Islamabad area, open to full-stack and front-end roles, and steadily building toward a parallel interest in application security.
+        </p>
+        <a href="assets/Roshaan Waheed Resume.pdf" class="btn btn-outline cv-btn" download>
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="section-head">
+        <span class="section-tag">02 — Skills</span>
+        <h2>What I work with</h2>
+      </div>
+      <ul class="skills-list">
+        <li class="skill-item">
+          <div class="skill-label"><i class="fa-brands fa-react"></i><span>React.js</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--level:90%"></div></div>
+        </li>
+        <li class="skill-item">
+          <div class="skill-label"><i class="fa-brands fa-node-js"></i><span>Node.js / Express</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--level:88%"></div></div>
+        </li>
+        <li class="skill-item">
+          <div class="skill-label"><i class="fa-solid fa-database"></i><span>MongoDB</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--level:85%"></div></div>
+        </li>
+        <li class="skill-item">
+          <div class="skill-label"><i class="fa-brands fa-js"></i><span>JavaScript (ES6+)</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--level:90%"></div></div>
+        </li>
+        <li class="skill-item">
+          <div class="skill-label"><i class="fa-brands fa-css3-alt"></i><span>CSS3 / Tailwind</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--level:87%"></div></div>
+        </li>
+        <li class="skill-item">
+          <div class="skill-label"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--level:85%"></div></div>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="projects" class="projects">
+      <div class="section-head">
+        <span class="section-tag">03 — Projects</span>
+        <h2>My work</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/Shoperia.png" alt="Shoperia e-commerce platform">
+          </div>
+          <div class="project-body">
+            <h3>Shoperia</h3>
+            <p>A full-stack fashion e-commerce platform with Cloudinary image handling, a complete payment flow, an admin panel, and Framer Motion page transitions.</p>
+            <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/OutDo.png" alt="OutDo project management app">
+          </div>
+          <div class="project-body">
+            <h3>OutDo</h3>
+            <p>A Kanban-style project management tool with smooth drag-and-drop task boards, built with @dnd-kit and @hello-pangea/dnd.</p>
+            <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/LashChat.png" alt="LashChat real-time chat app">
+          </div>
+          <div class="project-body">
+            <h3>LashChat</h3>
+            <p>A real-time messaging application powered by Socket.io, supporting instant delivery and live presence between users.</p>
+            <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-up-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  
+    <section id="contact" class="contact">
+      <div class="section-head">
+        <span class="section-tag">04 — Contact</span>
+        <h2>Let's work together</h2>
+      </div>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-success" id="formSuccess">Thanks! Your message has been noted.</p>
+        </form>
+
+        <div class="contact-info">
+          <a href="mailto:roshaan@example.com" class="contact-email">
+            <i class="fa-solid fa-envelope"></i> roshaan@example.com
+          </a>
+          <div class="social-links">
+            <a href="https://github.com/RoshaanWaheed" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Roshaan Waheed. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/RoshaanWaheed" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
