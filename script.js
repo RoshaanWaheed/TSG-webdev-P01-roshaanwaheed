@@ -19,7 +19,7 @@ const sections = document.querySelectorAll('main section[id]');
 const navItems = document.querySelectorAll('.nav-link');
  
 function setActiveLink() {
-  const scrollY = window.scrollY + 100; // offset for fixed header
+  const scrollY = window.scrollY + 100; 
  
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
