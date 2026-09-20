@@ -436,3 +436,46 @@ section { padding: 100px 24px; }
 }
 .scroll-top-btn.visible { display: flex; }
 .scroll-top-btn:hover { transform: translateY(-4px); }
+
+@media (max-width: 768px) {
+  section { padding: 72px 20px; }
+ 
+  .nav-toggle { display: flex; }
+ 
+  .nav-links {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--bg-alt);
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition);
+  }
+  .nav-links.open { max-height: 320px; }
+  .nav-links li { width: 100%; }
+  .nav-link {
+    display: block;
+    padding: 16px 24px;
+    border-top: 1px solid var(--border);
+  }
+ 
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 120px;
+    min-height: auto;
+  }
+  .hero-inner { max-width: 100%; }
+  .hero-actions { justify-content: center; }
+  .hero-photo-frame { width: 200px; height: 200px; }
+ 
+  .about-grid { flex-direction: column; }
+ 
+  .skills-list { grid-template-columns: 1fr; }
+ 
+  .projects-grid { grid-template-columns: 1fr; }
+ 
+  .contact-grid { flex-direction: column; }
+}
