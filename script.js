@@ -7,7 +7,7 @@ navToggle.addEventListener('click', () => {
   navToggle.setAttribute('aria-expanded', isOpen);
 });
  
-// Close the mobile menu automatically after a link is clicked
+
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
@@ -51,4 +51,69 @@ window.addEventListener('scroll', () => {
  
 scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+const contactForm = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const formSuccess = document.getElementById('formSuccess');
+ 
+function showError(input, errorEl, message) {
+  input.classList.add('invalid');
+  errorEl.textContent = message;
+}
+ 
+function clearError(input, errorEl) {
+  input.classList.remove('invalid');
+  errorEl.textContent = '';
+}
+ 
+function isValidEmail(value) {
+  
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+ 
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  formSuccess.classList.remove('show');
+ 
+  let isValid = true;
+ 
+  const nameError = document.getElementById('nameError');
+  if (nameInput.value.trim().length < 2) {
+    showError(nameInput, nameError, 'Please enter your name.');
+    isValid = false;
+  } else {
+    clearError(nameInput, nameError);
+  }
+ 
+
+  const emailError = document.getElementById('emailError');
+  if (!isValidEmail(emailInput.value.trim())) {
+    showError(emailInput, emailError, 'Please enter a valid email address.');
+    isValid = false;
+  } else {
+    clearError(emailInput, emailError);
+  }
+ 
+ 
+  const messageError = document.getElementById('messageError');
+  if (messageInput.value.trim().length < 10) {
+    showError(messageInput, messageError, 'Message should be at least 10 characters.');
+    isValid = false;
+  } else {
+    clearError(messageInput, messageError);
+  }
+ 
+  if (isValid) {
+    formSuccess.classList.add('show');
+    contactForm.reset();
+  }
+});
+ 
+
+[nameInput, emailInput, messageInput].forEach(input => {
+  input.addEventListener('input', () => {
+    input.classList.remove('invalid');
+  });
 });
