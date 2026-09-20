@@ -212,3 +212,19 @@ section { padding: 100px 24px; }
   border-radius: 50%;
   background: var(--surface);
 }
+.about-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+ 
+.about-bio {
+  flex: 1 1 480px;
+  color: var(--text-dim);
+  font-size: 1.02rem;
+}
+ 
+.cv-btn { flex-shrink: 0; }
