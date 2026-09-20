@@ -415,3 +415,24 @@ section { padding: 100px 24px; }
   color: var(--text-dim);
   font-size: 0.9rem;
 }
+.scroll-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #0F1215;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  transition: transform var(--transition), opacity var(--transition);
+  z-index: 90;
+}
+.scroll-top-btn.visible { display: flex; }
+.scroll-top-btn:hover { transform: translateY(-4px); }
