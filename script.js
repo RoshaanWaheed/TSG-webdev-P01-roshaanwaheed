@@ -117,3 +117,4 @@ contactForm.addEventListener('submit', (e) => {
     input.classList.remove('invalid');
   });
 });
+document.getElementById('year').textContent = new Date().getFullYear();
