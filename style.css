@@ -1,0 +1,18 @@
+:root {
+  --bg: #15181C;
+  --bg-alt: #1C2025;
+  --surface: #20242A;
+  --border: #2C3138;
+  --text: #EAE7E1;
+  --text-dim: #9CA3AC;
+  --accent: #5FA98C;
+  --accent-dim: #3E6F5C;
+  --danger: #E0645A;
+ 
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+ 
+  --max-width: 1140px;
+  --radius: 6px;
+  --transition: 0.25s ease;
+}
