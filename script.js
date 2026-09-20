@@ -15,3 +15,26 @@ document.querySelectorAll('.nav-link').forEach(link => {
     navToggle.setAttribute('aria-expanded', false);
   });
 });
+const sections = document.querySelectorAll('main section[id]');
+const navItems = document.querySelectorAll('.nav-link');
+ 
+function setActiveLink() {
+  const scrollY = window.scrollY + 100; // offset for fixed header
+ 
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+ 
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      navItems.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}
+ 
+window.addEventListener('scroll', setActiveLink);
