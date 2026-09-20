@@ -1,5 +1,31 @@
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
+const themeToggle = document.getElementById('themeToggle');
+
+// Theme toggle functionality
+const savedTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateThemeIcon(newTheme);
+});
+
+function updateThemeIcon(theme) {
+  const icon = themeToggle.querySelector('i');
+  if (theme === 'light') {
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  } else {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
+}
  
 navToggle.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
