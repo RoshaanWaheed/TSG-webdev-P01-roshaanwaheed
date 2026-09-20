@@ -479,3 +479,10 @@ section { padding: 100px 24px; }
  
   .contact-grid { flex-direction: column; }
 }
+@media (max-width: 480px) {
+  .navbar { padding: 14px 18px; }
+  section { padding: 60px 16px; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .site-footer { flex-direction: column; text-align: center; }
+}
