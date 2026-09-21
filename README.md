@@ -41,6 +41,10 @@ This is a single-page portfolio site that presents me as a full-stack developer 
 |---|---|---|
 | ![Mobile view](assets/Mobile.PNG) | ![Tablet view](assets/Tablet.PNG) | ![Desktop view](assets/Desktop.PNG) |
 
+## Demo Video
+
+file:///C:/Users/Dell/Videos/Captures/Roshaan%20Waheed%20_%20Full-Stack%20MERN%20Developer%20-%20Google%20Chrome%202026-09-21%2010-41-07.mp4
+
 ## Setup / Running Locally
 
 1. Clone the repository:
